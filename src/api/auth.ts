@@ -11,10 +11,10 @@ export const login = async (email: string, password: string): Promise<{
       email,
       password,
     });
-    console.log('API Response:', response.data); // Log the full response
-    return response.data; // Ensure this matches the actual response structure
+    console.log('API Response:', response.data); 
+    return response.data; 
   } catch (error:any) {
-    console.error('API Error:', error.response?.data || error.message); // Log the error
+    console.error('API Error:', error.response?.data || error.message);
     throw error;
   }
 };
